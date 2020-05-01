@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.min.js"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>-->
+   
+    <script src="sketch.js"></script>
+    <script type="text/javascript" src="cell.js"></script>
+  </head>
+  <body>
+  	<center>
+  		<h1><code>Game of Life</code></h1>
+  		  
+          <div id='p5jsContainer' style="margin: 0 0; background-color: black; height: 480px;"></div>
+        
+  		  <div style="width: 640px">
+  			<code>
+  				<center>
+  					Rules: <select id="ruleSelector" onchange="changeRules()">
+  						<option value="2 3/3" selected="selected" >23/3 - Classic</option>
+  						<option value="5 6 7 8/3 5 6 7 8">5678/35678 - Amoeba</option>
+  						<option value="1 3 5 8/3 5 7">1358/357</option>
+  						<option value="2 3/3 6">23/36 - HighLife</option>
+  						<option value="2 3 5 6 7 8/3 6 7 8">235678/3678</option>
+  						<option value="3 4/3 4">34/34</option>
+  					</select></center>
+  		  	 Inspired by <a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life" target="_blank">John Horton Conway's Game of life</a> 
+  		  		
+  		  	    thanks to <a href="http://p5js.org" target="_blank">p5js</a><br/>
+  		  	        <a href="https://github.com/pablo-benito/" target="_blank">Pablo Benito</a><br/>
+			</code>
+  		  </div>
+  	</center>
+
+  </body>
+</html>
